@@ -1,0 +1,10 @@
+<div class="w-50 d-flex justify-center">
+  <ul>
+    <% @articles.each do |article| %>
+    <li>
+      <h3><a href="/articles/<%= article.id %>"><%= article.title %></a></h2>
+      <p><%= article.content %></p>
+    </li>
+    <% end %>
+  </ul>
+</div>
